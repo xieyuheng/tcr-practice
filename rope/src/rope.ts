@@ -23,7 +23,7 @@ export type RopeOps = {
 //   }
 // }
 
-export function Rope(the: { to_string(): string }): Rope {
+export const Rope = (the: { to_string(): string }): Rope => {
   return {
     to_string: the.to_string,
 
