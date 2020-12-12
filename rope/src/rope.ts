@@ -23,19 +23,17 @@ export type RopeOps = {
 //   }
 // }
 
-export const Rope = (the: { to_string(): string }): Rope => {
-  return {
-    to_string: the.to_string,
+export const Rope = (the: { to_string(): string }): Rope => ({
+  to_string: the.to_string,
 
-    substr(start, length) {
-      return Substr(this, start, length)
-    },
+  substr(start, length) {
+    return Substr(this, start, length)
+  },
 
-    concat(that) {
-      return Concat(this, that)
-    }
-  }
-}
+  concat(that) {
+    return Concat(this, that)
+  },
+})
 
 export const Unit = (str: string) =>
   Rope({
