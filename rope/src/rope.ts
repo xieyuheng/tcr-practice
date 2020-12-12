@@ -29,6 +29,5 @@ export function Substr(rope: Rope, start: number, length: number): Rope {
   }
 }
 
-ut.assert_equal(Rope("abc").to_string(), "abc")
 ut.assert_equal(Rope("abcde").to_string(), "abcde")
 ut.assert_equal(Rope("abcde").substr(1, 3).to_string(), Rope("bcd").to_string())
