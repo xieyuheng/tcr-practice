@@ -43,8 +43,8 @@ export function Rope(the: RopeEssential): Rope {
 
     insert(rope, start) {
       const left = this.substr(0, start)
-      const right = this.substr(start, this.length - start)      
-      return Unit("abcde")
+      const right = this.substr(start, this.length - start)
+      return left.concat(rope).concat(right)
     }
   }
 }
