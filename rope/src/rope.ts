@@ -1,7 +1,6 @@
 import * as ut from "./ut"
 
 // TODO
-// - insert
 // - balance
 
 export type Rope = RopeEssential & RopeOps & RopeAPI
