@@ -22,7 +22,7 @@ export type RopeAPI = {
   length: number
 }
 
-export function Rope(the: { to_string(): string }): Rope {
+export function Rope(the: RopeEssential): Rope {
   return {
     to_string: the.to_string,
 
