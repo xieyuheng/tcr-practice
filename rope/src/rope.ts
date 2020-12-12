@@ -13,6 +13,7 @@ export type RopeOps = {
   substr(start: number, length: number): Rope
   concat(that: Rope): Rope
   delete(start: number, length: number): Rope
+  length: number
 }
 
 export function Rope(the: { to_string(): string }): Rope {
@@ -29,9 +30,11 @@ export function Rope(the: { to_string(): string }): Rope {
 
     delete(start, length) {
       const left = this.substr(0, start)
-      const right = Unit("e")
+      const right = this.substr(start + length, this.length - start - length)
       return left.concat(right)
-    }
+    },
+
+    length: 5 
   }
 }
 
