@@ -4,6 +4,7 @@ export type Rope = {
   to_string(): string
 
   substr(start: number, length: number): Rope
+  concat(left: Rope, right: Rope): Rope
 }
 
 export function Rope(the: { to_string(): string }): Rope {
@@ -13,6 +14,10 @@ export function Rope(the: { to_string(): string }): Rope {
     substr(start: number, length: number): Rope {
       return Substr(this, start, length)
     },
+
+    concat(left: Rope, right: Rope): Rope {
+      return Concat(left, right)
+    }
   }
 }
 
