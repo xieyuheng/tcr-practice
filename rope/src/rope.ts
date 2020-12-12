@@ -51,7 +51,7 @@ ut.assert_equal(
   Unit("cd").to_string()
 )
 
-// ut.assert_equal(
-//   Unit("abc").concat(Unit("de")).to_string(),
-//   Unit("abcde").to_string()
-// )
+ut.assert_equal(
+  Unit("abc").concat(Unit("de")).to_string(),
+  Unit("abcde").to_string()
+)
