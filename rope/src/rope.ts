@@ -2,9 +2,9 @@ import * as ut from "./ut"
 
 export type Rope = {
   to_string(): string
-} & RopeOp
+} & RopeOps
 
-export type RopeOp = {
+export type RopeOps = {
   substr(start: number, length: number): Rope
   concat(that: Rope): Rope
 }
