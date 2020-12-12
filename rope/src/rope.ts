@@ -18,6 +18,7 @@ export type RopeOps = {
 
 export type RopeAPI = {
   delete(start: number, length: number): Rope
+  insert(rope: Rope, start: number): Rope
   length: number
 }
 
@@ -39,6 +40,10 @@ export function Rope(the: RopeEssential): Rope {
       const right = this.substr(start + length, this.length - start - length)
       return left.concat(right)
     },
+
+    insert(rope, start) {
+      throw new Error("TODO")
+    }
   }
 }
 
