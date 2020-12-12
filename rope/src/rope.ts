@@ -1,8 +1,9 @@
 import * as ut from "./ut"
 
 // TODO
-// - insert
+// - length
 // - delete
+// - insert
 // - balance
 
 export type Rope = {
