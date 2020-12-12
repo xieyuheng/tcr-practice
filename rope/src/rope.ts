@@ -9,6 +9,20 @@ export type RopeOps = {
   concat(that: Rope): Rope
 }
 
+// export function Rope(the: { to_string(): string }): Rope {
+//   return {
+//     to_string: the.to_string,
+
+//     substr(start, length) {
+//       return Substr(this, start, length)
+//     },
+
+//     concat(that) {
+//       return Concat(this, that)
+//     }
+//   }
+// }
+
 export function Rope(the: { to_string(): string }): Rope {
   return {
     to_string: the.to_string,
