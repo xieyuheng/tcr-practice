@@ -68,7 +68,7 @@ export const Concat = (left: Rope, right: Rope) =>
       return left.to_string().concat(right.to_string())
     },
 
-    length: 5,
+    length: left.length + right.length,
   })
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
