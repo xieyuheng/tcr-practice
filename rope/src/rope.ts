@@ -8,7 +8,9 @@ export type Rope = {
 export function Rope(str: string): Rope {
   return {
     to_string: () => str,
-    substr: (start, length) => Rope("bcd")
+    substr(start, length) {
+      return Rope("bcd")
+    }
   }
 }
 
