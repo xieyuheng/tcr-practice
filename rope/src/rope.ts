@@ -9,7 +9,7 @@ export function Rope(str: string): Rope {
   return {
     to_string: () => str,
     substr(start, length) {
-      return Rope("bcd")
+      return Substr(this, start, length)
       // return Rope("bcd")
     }
   }
