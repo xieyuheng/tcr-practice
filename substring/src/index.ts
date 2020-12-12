@@ -7,7 +7,7 @@ export function double_string_take(
   end: number
 ): string {
   const new_left = left.substring(start, end)
-  const length = new_left.length
+  const length = left.length
   const new_right = right.substring(start - length, end - length)
   return new_left.concat(new_right)
 }
