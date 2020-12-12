@@ -28,7 +28,9 @@ export function Rope(the: { to_string(): string }): Rope {
     },
 
     delete(start, length) {
-      return Unit("ae")
+      const left = Unit("a")
+      const right = Unit("e")      
+      return left.concat(right)
     }
   }
 }
