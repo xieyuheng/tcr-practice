@@ -7,11 +7,14 @@ import * as ut from "./ut"
 
 export type Rope = {
   to_string(): string
-} & RopeOps
+} & RopeOps & RopeAPI
 
 export type RopeOps = {
   substr(start: number, length: number): Rope
   concat(that: Rope): Rope
+}
+
+export type RopeAPI = {
   delete(start: number, length: number): Rope
   length: number
 }
@@ -34,7 +37,7 @@ export function Rope(the: { to_string(): string }): Rope {
       return left.concat(right)
     },
 
-    length: 5 
+    length: 5,
   }
 }
 
