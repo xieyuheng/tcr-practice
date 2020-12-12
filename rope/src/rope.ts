@@ -6,7 +6,7 @@ export type Rope = {
 }
 
 export abstract class Rope2 {
-  // to_string(): string
+  abstract to_string(): string
   // substr(start: number, length: number): Rope2 {
   //   return Substr(this, start, length)
   // }
