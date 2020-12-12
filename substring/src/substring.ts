@@ -12,4 +12,4 @@ export function double_str_take(
 
 // export function str_take
 
-// ut.assert_equal(substring("abc", "def", 2, 5), "cde")
+// ut.assert_equal(double_str_take("abc", "def", 2, 5), "cde")
