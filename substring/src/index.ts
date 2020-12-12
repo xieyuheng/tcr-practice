@@ -1,6 +1,6 @@
 import * as ut from "./ut"
 
-export function double_str_take(
+export function double_string_take(
   left: string,
   right: string,
   start: number,
@@ -8,8 +8,5 @@ export function double_str_take(
 ): string {
   return "cde"
 }
-
-
-// export function str_take
 
 // ut.assert_equal(double_str_take("abc", "def", 2, 5), "cde")
