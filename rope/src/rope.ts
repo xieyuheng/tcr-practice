@@ -1,5 +1,10 @@
 import * as ut from "./ut"
 
+// TODO
+// - insert
+// - delete
+// - balance
+
 export type Rope = {
   to_string(): string
 } & RopeOps
