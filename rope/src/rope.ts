@@ -24,15 +24,11 @@ export function Unit(str: string): Rope {
 }
 
 export function Substr(rope: Rope, start: number, length: number): Rope {
-  return {
+  return Rope({
     to_string() {
       return rope.to_string().substr(start, length)
     },
-
-    substr(start, length) {
-      throw new Error("TODO")
-    },
-  }
+  })
 }
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
