@@ -5,9 +5,14 @@ export type Rope = {
   substr(start: number, length: number): Rope
 }
 
-export function Rope(str: string): Rope {
-  return Unit(str)
+export type RopeOp = {
+  to_string(): string
+  substr(start: number, length: number): Rope
 }
+
+// export function Rope(str: string): Rope {
+//   return Unit(str)
+// }
 
 export function Unit(str: string): Rope {
   return {
