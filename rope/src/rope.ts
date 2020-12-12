@@ -19,7 +19,7 @@ export function Rope(the: { to_string(): string }): Rope {
 
     concat(that) {
       return Concat(this, that)
-    }
+    },
   }
 }
 
