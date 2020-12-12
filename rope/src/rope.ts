@@ -62,3 +62,8 @@ ut.assert_equal(
   Unit("abc").concat(Unit("de")).to_string(),
   Unit("abcde").to_string()
 )
+
+// ut.assert_equal(
+//   Unit("abcde").delete(1, 3).to_string(),
+//   Unit("ae").to_string()
+// )
