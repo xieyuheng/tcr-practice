@@ -59,7 +59,7 @@ export const Substr = (rope: Rope, start: number, length: number) =>
       return rope.to_string().substr(start, length)
     },
 
-    length: rope.length - start - length,
+    length: 5,
   })
 
 export const Concat = (left: Rope, right: Rope) =>
