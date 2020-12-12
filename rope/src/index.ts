@@ -1,1 +1,3 @@
-const x: number = 13
+export type Rope = {
+
+}
