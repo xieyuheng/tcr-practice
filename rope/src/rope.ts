@@ -31,8 +31,15 @@ export const Substr = (rope: Rope, start: number, length: number) =>
   })
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
+
 ut.assert_equal(Unit("abcde").substr(1, 3).to_string(), Unit("bcd").to_string())
+
 ut.assert_equal(
   Unit("abcde").substr(1, 3).substr(1, 2).to_string(),
   Unit("cd").to_string()
 )
+
+// ut.assert_equal(
+//   Unit("abc").concat(Unit("de")).to_string(),
+//   Unit("abcde").to_string()
+// )
