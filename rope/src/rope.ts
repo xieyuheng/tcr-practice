@@ -6,9 +6,11 @@ import * as ut from "./ut"
 // - insert
 // - balance
 
-export type Rope = {
+export type Rope = RopeEssential & RopeOps & RopeAPI
+
+export type RopeEssential = {
   to_string(): string
-} & RopeOps & RopeAPI
+}
 
 export type RopeOps = {
   substr(start: number, length: number): Rope
