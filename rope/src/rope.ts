@@ -15,7 +15,6 @@ export type RopeOps = {
 export type RopeAPI = {
   delete(start: number, length: number): Rope
   insert(rope: Rope, start: number): Rope
-  length: number
 }
 
 export function Rope(the: RopeEssential): Rope {
