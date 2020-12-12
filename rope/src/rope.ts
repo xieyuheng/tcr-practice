@@ -6,15 +6,13 @@ export type Rope = {
   substr(start: number, length: number): Rope
 }
 
-export function Rope(the: { to_string(): string }): Rope {
-  return {
-    to_string: the.to_string,
+export const Rope = (the: { to_string(): string }): Rope => ({
+  to_string: the.to_string,
 
-    substr(start: number, length: number): Rope {
-      return Substr(this, start, length)
-    },
-  }
-}
+  substr(start: number, length: number): Rope {
+    return Substr(this, start, length)
+  },
+})
 
 export const Unit = (str: string) =>
   Rope({
