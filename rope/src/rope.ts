@@ -42,7 +42,7 @@ export function Rope(the: RopeEssential): Rope {
     },
 
     insert(rope, start) {
-      throw new Error("TODO")
+      return Unit("abcde")
     }
   }
 }
