@@ -8,9 +8,13 @@ export type RopeOp = {
   substr(start: number, length: number): Rope
 }
 
-// export function Rope(str: string): Rope {
-//   return Unit(str)
-// }
+export function RopeOp(rope: Rope): RopeOp {
+  return {
+    substr(start, length) {
+      return Substr(rope, start, length)
+    },
+  }
+}
 
 export function Unit(str: string): Rope {
   return {
