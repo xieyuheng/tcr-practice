@@ -2,13 +2,14 @@ import * as ut from "./ut"
 
 export type Rope = {
   to_string(): string
-  
+
   substr(start: number, length: number): Rope
 }
 
 export function Rope(the: { to_string(): string }): Rope {
   return {
     to_string: the.to_string,
+
     substr(start: number, length: number): Rope {
       return Substr(this, start, length)
     },
