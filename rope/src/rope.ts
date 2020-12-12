@@ -15,7 +15,7 @@ export function Rope(the: { to_string(): string }): Rope {
       return Substr(this, start, length)
     },
 
-    concat(that: Rope): Rope {
+    concat(that) {
       return Concat(this, that)
     }
   }
