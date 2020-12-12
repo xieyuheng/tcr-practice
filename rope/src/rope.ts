@@ -2,6 +2,7 @@ import * as ut from "./ut"
 
 export type Rope = {
   to_string(): string
+  
   substr(start: number, length: number): Rope
 }
 
