@@ -12,7 +12,7 @@ export function Rope(str: string): Rope {
   }
 }
 
-// export function substr(rope: Rope, start: number, length: number): Rope {
+// export function Substr(rope: Rope, start: number, length: number): Rope {
 //   return {
 //     start: number, length: number
 //   }
