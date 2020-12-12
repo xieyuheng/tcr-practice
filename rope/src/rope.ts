@@ -2,18 +2,7 @@ import * as ut from "./ut"
 
 export type Rope = {
   to_string(): string
-} & RopeOp
-
-export type RopeOp = {
   substr(start: number, length: number): Rope
-}
-
-export function RopeOp(rope: Rope): RopeOp {
-  return {
-    substr(start, length) {
-      return Substr(rope, start, length)
-    },
-  }
 }
 
 export function Unit(str: string): Rope {
