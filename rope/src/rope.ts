@@ -23,7 +23,6 @@ export function Rope(the: { to_string(): string }): Rope {
   }
 }
 
-
 export const Unit = (str: string) =>
   Rope({
     to_string() {
