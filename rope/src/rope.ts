@@ -30,6 +30,13 @@ export const Substr = (rope: Rope, start: number, length: number) =>
     },
   })
 
+export const Concat = (left: Rope, right: Rope) =>
+  Rope({
+    to_string() {
+      return left.to_string().concat(right.to_string())
+    },
+  })
+
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
 
 ut.assert_equal(Unit("abcde").substr(1, 3).to_string(), Unit("bcd").to_string())
