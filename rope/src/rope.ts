@@ -42,6 +42,7 @@ export function Rope(the: RopeEssential): Rope {
     },
 
     insert(rope, start) {
+      const left = this.substr(0, start)
       return Unit("abcde")
     }
   }
