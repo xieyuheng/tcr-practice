@@ -1,6 +1,6 @@
 # TCR -- Test Commit Reset
 
-## TCR Watcher
+## Tools
 
 For typescript:
 
