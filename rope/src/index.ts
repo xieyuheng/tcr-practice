@@ -13,3 +13,4 @@ export function Rope(str: string): Rope {
 }
 
 assert(Rope("abc").to_string() === "abc")
+console.log(Rope("abc"))
