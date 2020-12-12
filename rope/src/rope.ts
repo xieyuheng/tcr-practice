@@ -46,7 +46,7 @@ export const Concat = (left: Rope, right: Rope) =>
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
 
-ut.assert_equal(Unit("abcd").substr(1, 3).to_string(), Unit("bcd").to_string())
+ut.assert_equal(Unit("abcde").substr(1, 3).to_string(), Unit("bcd").to_string())
 
 ut.assert_equal(
   Unit("abcde").substr(1, 3).substr(1, 2).to_string(),
