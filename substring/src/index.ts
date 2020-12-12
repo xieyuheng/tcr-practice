@@ -1,6 +1,6 @@
 import * as ut from "./ut"
 
-export function double_substring(
+export function concat_substring(
   left: string,
   right: string,
   start: number,
@@ -11,4 +11,4 @@ export function double_substring(
   return new_left.concat(new_right)
 }
 
-ut.assert_equal(double_substring("abc", "def", 2, 5), "cde")
+ut.assert_equal(concat_substring("abc", "def", 2, 5), "cde")
