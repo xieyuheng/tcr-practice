@@ -1,4 +1,4 @@
-import assert from "assert"
+import * as ut from "./ut"
 
 export type Rope = {
   str: string
@@ -12,4 +12,4 @@ export function Rope(str: string): Rope {
   }
 }
 
-assert(Rope("abc").to_string() === "abc")
+ut.assert_equal(Rope("abc").to_string(), "abc")
