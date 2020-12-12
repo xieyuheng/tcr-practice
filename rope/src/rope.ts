@@ -65,5 +65,5 @@ ut.assert_equal(
 
 // ut.assert_equal(
 //   Unit("abcde").delete(1, 3).to_string(),
-//   Unit("ae").to_string()
+//   "ae"
 // )
