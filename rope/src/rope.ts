@@ -29,7 +29,7 @@ export function Rope(the: { to_string(): string }): Rope {
 
     delete(start, length) {
       const left = Unit("a")
-      const right = Unit("e")      
+      const right = Unit("e")
       return left.concat(right)
     }
   }
