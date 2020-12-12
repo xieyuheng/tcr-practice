@@ -10,6 +10,7 @@ export function Rope(str: string): Rope {
     to_string() {
       return str
     },
+
     substr(start, length) {
       return Substr(this, start, length)
     },
