@@ -1,7 +1,6 @@
 import * as ut from "./ut"
 
 // TODO
-// - delete
 // - insert
 // - balance
 
