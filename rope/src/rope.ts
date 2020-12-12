@@ -6,7 +6,6 @@ export type Rope = {
 }
 
 export type RopeOp = {
-  to_string(): string
   substr(start: number, length: number): Rope
 }
 
