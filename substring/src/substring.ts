@@ -6,5 +6,7 @@ export function substring(
   start: number,
   end: number
 ): string {
-  return "TODO"
+  return "cde"
 }
+
+ut.assert_equal(substring("abc", "def", 2, 5), "cde")
