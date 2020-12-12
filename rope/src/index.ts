@@ -1,1 +1,1 @@
-const x = 12
+const x: number = 12
