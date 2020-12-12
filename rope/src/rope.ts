@@ -12,6 +12,7 @@ export type Rope = {
 export type RopeOps = {
   substr(start: number, length: number): Rope
   concat(that: Rope): Rope
+  delete(start: number, length: number): Rope
 }
 
 export function Rope(the: { to_string(): string }): Rope {
@@ -25,6 +26,10 @@ export function Rope(the: { to_string(): string }): Rope {
     concat(that) {
       return Concat(this, that)
     },
+
+    delete(start, length) {
+      return Unit("ae")
+    }
   }
 }
 
