@@ -1,8 +1,8 @@
 import * as ut from "./ut"
 
-export type Rope = RopeEssential & RopeOps & RopeAPI
+export type Rope = RopeRequired & RopeOps & RopeAPI
 
-export type RopeEssential = {
+export type RopeRequired = {
   to_string(): string
   length: number
 }
@@ -17,7 +17,7 @@ export type RopeAPI = {
   insert(rope: Rope, start: number): Rope
 }
 
-export function Rope(the: RopeEssential): Rope {
+export function Rope(the: RopeRequired): Rope {
   return {
     to_string: the.to_string,
     length: the.length,
