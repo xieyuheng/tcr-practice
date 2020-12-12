@@ -23,13 +23,12 @@ export const Unit = (str: string) =>
     },
   })
 
-export function Substr(rope: Rope, start: number, length: number): Rope {
-  return Rope({
+export const Substr = (rope: Rope, start: number, length: number) =>
+  Rope({
     to_string() {
       return rope.to_string().substr(start, length)
     },
   })
-}
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
 ut.assert_equal(Unit("abcde").substr(1, 3).to_string(), Unit("bcd").to_string())
