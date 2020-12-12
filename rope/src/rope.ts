@@ -14,7 +14,7 @@ export function Rope(str: string): Rope {
 
 export function Substr(rope: Rope, start: number, length: number): Rope {
   return {
-    to_string: () => "",
+    to_string: () => rope.to_string().substr(start, length),
     substr: (start, length) => {
       throw new Error("TODO")
     }
