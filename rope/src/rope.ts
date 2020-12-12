@@ -77,4 +77,6 @@ ut.assert_equal(Unit("abcde").substr(1, 3).substr(1, 2).to_string(), "cd")
 ut.assert_equal(Unit("abc").concat(Unit("de")).to_string(), "abcde")
 
 ut.assert_equal(Unit("abcde").delete(1, 3).to_string(), "ae")
+
 ut.assert_equal(Unit("abcde").substr(1, 3).length, 3)
+ut.assert_equal(Unit("abc").concat(Unit("de")).length, 5)
