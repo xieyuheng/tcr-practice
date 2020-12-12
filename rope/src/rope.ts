@@ -10,6 +10,7 @@ export type Rope = RopeEssential & RopeOps & RopeAPI
 
 export type RopeEssential = {
   to_string(): string
+  length: number
 }
 
 export type RopeOps = {
@@ -25,6 +26,7 @@ export type RopeAPI = {
 export function Rope(the: RopeEssential): Rope {
   return {
     to_string: the.to_string,
+    length: the.length,
 
     substr(start, length) {
       return Substr(this, start, length)
@@ -39,8 +41,6 @@ export function Rope(the: RopeEssential): Rope {
       const right = this.substr(start + length, this.length - start - length)
       return left.concat(right)
     },
-
-    length: 5,
   }
 }
 
@@ -49,6 +49,8 @@ export const Unit = (str: string) =>
     to_string() {
       return str
     },
+
+    length: 5,
   })
 
 export const Substr = (rope: Rope, start: number, length: number) =>
@@ -56,6 +58,8 @@ export const Substr = (rope: Rope, start: number, length: number) =>
     to_string() {
       return rope.to_string().substr(start, length)
     },
+
+    length: 5,
   })
 
 export const Concat = (left: Rope, right: Rope) =>
@@ -63,6 +67,8 @@ export const Concat = (left: Rope, right: Rope) =>
     to_string() {
       return left.to_string().concat(right.to_string())
     },
+
+    length: 5,
   })
 
 ut.assert_equal(Unit("abcde").to_string(), "abcde")
