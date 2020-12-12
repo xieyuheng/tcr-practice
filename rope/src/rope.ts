@@ -6,10 +6,10 @@ export type Rope = {
 }
 
 export function Rope(str: string): Rope {
-  return Str(str)
+  return Unit(str)
 }
 
-export function Str(str: string): Rope {
+export function Unit(str: string): Rope {
   return {
     to_string() {
       return str
@@ -33,5 +33,5 @@ export function Substr(rope: Rope, start: number, length: number): Rope {
   }
 }
 
-ut.assert_equal(Rope("abcde").to_string(), "abcde")
-ut.assert_equal(Rope("abcde").substr(1, 3).to_string(), Rope("bcd").to_string())
+ut.assert_equal(Unit("abcde").to_string(), "abcde")
+ut.assert_equal(Unit("abcde").substr(1, 3).to_string(), Unit("bcd").to_string())
