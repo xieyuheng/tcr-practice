@@ -59,7 +59,7 @@ export const Substr = (rope: Rope, start: number, length: number) =>
       return rope.to_string().substr(start, length)
     },
 
-    length: 5,
+    length,
   })
 
 export const Concat = (left: Rope, right: Rope) =>
@@ -77,3 +77,4 @@ ut.assert_equal(Unit("abcde").substr(1, 3).substr(1, 2).to_string(), "cd")
 ut.assert_equal(Unit("abc").concat(Unit("de")).to_string(), "abcde")
 
 ut.assert_equal(Unit("abcde").delete(1, 3).to_string(), "ae")
+// ut.assert_equal(Unit("abcde").substr(1, 3).length, 2)
