@@ -8,5 +8,5 @@ export function double_string_take(
 ): string {
   return "cde"
 }
-
+ 
 // ut.assert_equal(double_str_take("abc", "def", 2, 5), "cde")
