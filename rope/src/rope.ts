@@ -5,13 +5,28 @@ export type Rope = {
   substr(start: number, length: number): Rope
 }
 
-export abstract class Rope2 {
-  abstract to_string(): string
+// export function Rope(the: {
+//   to_string(): string
+// }): Rope {
+//   return {
+//     to_string: the.to_string,
 
-  substr(start: number, length: number): Rope2 {
-    return Substr(this, start, length)
-  }
-}
+//     substr(start: number, length: number): Rope {
+//       return Substr(this, start, length)
+//     }
+//   }
+// }
+
+// export abstract class Rope2 {
+//   abstract to_string(): string
+
+//   substr(start: number, length: number): Rope2 {
+//     return Substr(this, start, length)
+//   }
+// }
+
+// export class Unit extends {
+// }
 
 export function Unit(str: string): Rope {
   return {
