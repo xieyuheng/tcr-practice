@@ -50,7 +50,7 @@ export const Unit = (str: string) =>
       return str
     },
 
-    length: 5,
+    length: str.length,
   })
 
 export const Substr = (rope: Rope, start: number, length: number) =>
