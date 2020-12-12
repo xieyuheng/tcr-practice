@@ -1,13 +1,13 @@
 import * as ut from "./ut"
 
-export type Rope = RopeRequired & RopeOps & RopeAPI
+export type Rope = RopeRequired & RopeExp & RopeAPI
 
 export type RopeRequired = {
   to_string(): string
   length: number
 }
 
-export type RopeOps = {
+export type RopeExp = {
   substr(start: number, length: number): Rope
   concat(that: Rope): Rope
 }
