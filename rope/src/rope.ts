@@ -12,11 +12,14 @@ export function Rope(str: string): Rope {
   }
 }
 
-// export function Substr(rope: Rope, start: number, length: number): Rope {
-//   return {
-//     start: number, length: number
-//   }
-// }
+export function Substr(rope: Rope, start: number, length: number): Rope {
+  return {
+    to_string: () => "",
+    substr: (start, length) => {
+      throw new Error("TODO")
+    }
+  }
+}
 
 ut.assert_equal(Rope("abc").to_string(), "abc")
 ut.assert_equal(Rope("abcde").to_string(), "abcde")
