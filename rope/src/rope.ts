@@ -1,8 +1,5 @@
 import * as ut from "./ut"
 
-// TODO
-// - balance
-
 export type Rope = RopeEssential & RopeOps & RopeAPI
 
 export type RopeEssential = {
