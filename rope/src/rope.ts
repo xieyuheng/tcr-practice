@@ -14,5 +14,3 @@ export function Rope(str: string): Rope {
 
 ut.assert_equal(Rope("abc").to_string(), "abc")
 ut.assert_equal(Rope("abcde").to_string(), "abcde")
-
-
